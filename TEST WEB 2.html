@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<head>
+<title>Rumah Tisu Pekanbaru</title>
+<link rel="icon" type="image/x-icon" href="https://down-cvs-id.img.susercontent.com/b18aec8cec7e98adea66f34b9acef56a_tn.webp">
+    <meta property="og:title" content="Rumah Tisu Pekanbaru">
+    <meta property="og:description" content="Belanja mudah kebutuhan rumah tangga dengan harga terjangkau.">
+    <meta property="og:image" content="https://down-cvs-id.img.susercontent.com/b18aec8cec7e98adea66f34b9acef56a_tn.webp">
+    <meta property="og:url" content="https://rumahtisupekanbaru.com">
+    <meta name="twitter:card" content="summary_large_image">
+<style>
+
+     html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+body {
+    background: linear-gradient(to bottom, #f5f5f5, #e0e7ff);
+}
+
+header {
+    background: #4f46e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #4338ca;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.atas {
+    background: url('https://source.unsplash.com/1200x400/?library') no-repeat center;
+    background-size: cover;
+    color: black;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 0;
+}
+
+.balok {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.balok {
+    border: 1px solid #eee;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+     margin: 0 5%;
+    width: 90%;
+}
+
+.grid .card {
+    flex: 1 1 250px;
+}
+
+footer {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+.ecommerce {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ecommerce .card {
+    width: 120px;
+    text-align: center;
+}
+
+.ecommerce .card a {
+    text-decoration: none;
+    color: black;
+}
+
+.ecommerce .img-box {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}   
+
+.balok.ecommerce-box {
+    position: relative;
+}
+
+.label-shopee {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ee4d2d;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* Map */
+.map-container {
+    width: 100%;
+    height: 400px;
+}
+.produk-img {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.produk-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.best-seller {
+    width: 100%;
+    float: left;
+    display: flex;
+    margin: 20px auto;
+}
+
+.ecommerce-box {
+    clear: both;
+}
+.clear {
+    clear: both;
+}
+
+.balok.produk {
+    position: relative;
+    width: 20%;
+    margin: 0 2.5%;
+}
+.balok.produk:hover p:last-of-type {
+    transform: scale(1.0);
+}
+
+.top-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.top-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.top1 { background: #ff9800; }   /* oreng */
+.top2 { background: #f44336; }   /* merah */
+.top3 { background: #2196f3; }   /* biru */ 
+.top4 { background: #4caf50; }   /* hijau */
+
+.btn-wa {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-wa:hover {
+    background: #1ebe5d;
+}
+
+img {
+    transition: 0.3s;
+}
+
+img:hover {
+    opacity: 0.9;
+}
+
+.btn-beli {
+    display: block;
+    width: 90%;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background: #ee4d2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-beli:hover {
+    background: #d8432a;
+}
+.layanan {
+    background: white;
+    padding: 20px;
+    margin: 20px 0 20px 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+.dark .layanan {
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #333;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#lokasi {
+    scroll-margin-top: 70px; 
+}
+
+.balok.produk {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.balok.produk:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.ecommerce .card:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.balok.produk h3 {
+    font-size: 14px;
+    height: auto;
+    overflow: visible;
+    margin-bottom: 5px;
+}
+.balok.produk p:last-of-type {
+    color: #ee4d2d;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-beli:active {
+    transform: scale(0.97);
+}
+.balok {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.container h2 {
+    border-left: 5px solid #ee4d2d;
+    padding-left: 10px;
+    margin: 0 20px;
+}
+
+nav {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+nav {
+    animation: slideDown 0.4s;
+}
+   section, .container > h2 {
+        scroll-margin-top: 70px; 
+    }
+
+@keyframes slideDown {
+    from {transform: translateY(-50%);}
+    to {transform: translateY(0);}
+}
+.produk-img img {
+    transition: transform 0.3s;
+}
+
+.balok.produk:hover img {
+    transform: scale(1.06);
+}
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ee4d2d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 9999;
+}
+.scroll-top:hover {
+    background: #d8432a;
+    transform: scale(1.1);
+}
+.balok {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-dark {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dark {
+    background: #121212;
+    color: white;
+}
+.dark .balok {
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #333;
+}
+
+.dark nav {
+    background: #1f1f1f;
+}
+
+.dark header {
+    background: #1f1f1f;
+}
+
+.dark footer {
+    background: #1f1f1f;
+}
+
+.dark a {
+    color: white;
+}
+
+.dark .container h2 {
+    border-left: 5px solid #ee4d2d;
+}
+.dark .atas h2,
+.dark .atas p {
+    color: white;
+}
+.dark .ecommerce .card a {
+    color: white;
+}
+
+.dark .ecommerce p {
+    color: white;
+}
+.dark .balok {
+    color: white;
+}
+.sosial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+.sosial img {
+    width: 30px;
+    display: block;
+}
+
+.sosial img:hover {
+    transform: scale(1.2);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-dark {
+    position: absolute;
+    right: 20px;
+}
+@media (max-width: 768px) {
+    .best-seller {
+        flex-wrap: wrap;
+    }
+
+    .balok.produk {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+#progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: #ee4d2d;
+    width: 0%;
+    z-index: 9999;
+}
+.wa-float {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 9999;
+    background: #25D366;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.wa-float img {
+    width: 30px;
+    display: block;
+}
+
+.wa-float:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
+}
+.wa-float{animation:bounce 2s infinite;}
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-3px);}
+}
+#btnLang {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    position: fixed;
+    top: 7px;
+    left: 20px; 
+    z-index: 9999; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    background: white;
+}
+
+#btnLang img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#btnLang:hover {
+    transform: scale(1.1);
+}
+</style>
+
+</head>
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+
+    let btn = document.getElementById("btnDark");
+
+    if (document.body.classList.contains("dark")) {
+        btn.innerHTML = "&#x2600;"; 
+        localStorage.setItem("darkMode", "true");
+    } else {
+        btn.innerHTML = "&#x1F319;";
+        localStorage.setItem("darkMode", "false");
+    }
+}
+
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark");
+    document.getElementById("btnDark").innerHTML = "&#x2600;";
+}
+
+</script>
+<script>
+window.onscroll = function() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    document.getElementById("progress").style.width = (winScroll / height) * 100 + "%";
+};
+</script>
+<script>
+window.addEventListener('DOMContentLoaded',()=>{
+    document.querySelector('.atas').style.backgroundImage="url('https://source.unsplash.com/1200x400/?library')";
+});
+</script>
+<a href="https://wa.me/6285278686868" target="_blank" class="wa-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">    
+</a>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let currentLang = 'id';
+    const btn = document.getElementById('btnLang');
+
+    function toggleLang() {
+        if(currentLang === 'id') {
+            currentLang = 'en';
+            btn.querySelector('img').src = 'https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg';
+            document.querySelectorAll('[data-text-id]').forEach(el=>{
+                el.innerText = el.getAttribute('data-text-en');
+            });
+        } else {
+            currentLang = 'id';
+            btn.querySelector('img').src = 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg';
+            document.querySelectorAll('[data-text-id]').forEach(el=>{
+                el.innerText = el.getAttribute('data-text-id');
+            });
+        }
+    }
+
+    btn.addEventListener('click', toggleLang);
+});
+</script>
+<body>
+<div id="progress"></div>
+<a href="#beranda" class="scroll-top">&#x2191;</a>
+<header>
+    <h1>Rumah Tisu Pekanbaru</h1>
+<p data-text-id="Belanja mudah, harga bersahabat" data-text-en="Easy shopping, affordable prices">
+        Belanja mudah, harga bersahabat
+    </p>
+</header>
+<button id="btnLang">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="ID">
+</button>
+<nav>
+     <button onclick="toggleDark()" class="btn-dark" id="btnDark">&#x1F319;</button>
+    <a href="#beranda" data-text-id="Beranda" data-text-en="Home">Beranda</a>
+    <a href="#profil" data-text-id="Profil" data-text-en="Profile">Profil</a>
+    <a href="#layanan" data-text-id="Layanan" data-text-en="Services">Layanan</a>
+    <a href="#best" data-text-id="Best Seller" data-text-en="Best Seller">Best Seller</a>
+    <a href="#kontak" data-text-id="Kontak" data-text-en="Contact">Kontak</a>
+    <a href="#ecommerce" data-text-id="E-Commerce" data-text-en="E-Commerce">E-Commerce</a>
+    <a href="#lokasi" data-text-id="Lokasi" data-text-en="Location">Lokasi</a>
+</nav>
+
+<section class="atas" id="beranda">
+     <h2 data-text-id="Selamat Datang" data-text-en="Welcome">Selamat Datang</h2>
+    <p data-text-id="Temukan kebutuhan rumah tanggamu disini dengan harga yang terjangkau" 
+       data-text-en="Find your household needs here at affordable prices">
+       Temukan kebutuhan rumah tanggamu disini dengan harga yang terjangkau
+    </p>
+</section>
+
+<div class="container">
+
+<h2 id="profil" data-text-id="Profil Rumah Tisu Pekanbaru" data-text-en="Rumah Tisu Pekanbaru Profile">
+    Profil Rumah Tisu Pekanbaru
+</h2>
+    <div class="balok">
+        <p data-text-id="Toko kami menyediakan berbagai kebutuhan harian dengan harga terjangkau. Kami melayani penjualan tisu eceran dan grosir, makanan kucing, serta berbagai perlengkapan rumah tangga lainnya." 
+       data-text-en="Our store provides various daily needs at affordable prices. We sell tissues retail and wholesale, cat food, and other household supplies.">
+       Toko kami menyediakan berbagai kebutuhan harian dengan harga terjangkau. Kami melayani penjualan tisu eceran dan grosir, makanan kucing, serta berbagai perlengkapan rumah tangga lainnya.
+    </p>
+    </div>
+
+    <h2 id="layanan" data-text-id="Layanan Kami" data-text-en="Our Services">Layanan Kami</h2>
+<div class="grid">
+        <div class="layanan" data-text-id="Penjualan Tisu Grosir dan Eceran" data-text-en="Tissue Sales: Wholesale & Retail">
+            Penjualan Tisu Grosir dan Eceran
+        </div>
+        <div class="layanan" data-text-id="Makanan Kucing Berkualitas" data-text-en="Quality Cat Food">
+            Makanan Kucing Berkualitas
+        </div>
+        <div class="layanan" data-text-id="Perlengkapan Rumah Tangga Lengkap" data-text-en="Complete Household Supplies">
+            Perlengkapan Rumah Tangga Lengkap
+        </div>
+        <div class="layanan" data-text-id="Layanan Online & Offline" data-text-en="Online & Offline Services">
+            Layanan Online & Offline
+        </div>
+    </div>
+
+    <h2 id="best">Best Seller</h2>
+<div class="best-seller">
+
+    <div class="balok produk">
+         <div class="top-badge top1">Top 1</div>
+        <div class="produk-img">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lz77tiuurgez58@resize_w450_nl.webp">
+        </div>
+        <h3>Tisu Jolly 250s x 4 facial tissue 250s 250 sheets 4 bungkus</h3>
+    <p data-text-id="&#x2B50 4.9 | Terjual 7RB+ | 137/Bulan" 
+       data-text-en="&#x2B50 4.9 | Sold 7K+ | 137/Month">
+       &#x2B50; 4.9 | Terjual 7RB+ | 137/Bulan
+    </p>
+        <p>Rp34.000 - Rp35.000</p>
+        <a href="https://shopee.co.id/tisu-Jolly-250s-x-4-facial-tissue-250s-250-sheets-4-bungkus-Pekanbaru-i.201020414.15784352288?extraParams=%7B%22display_model_id%22%3A206979307091%2C%22model_selection_logic%22%3A2%7D" class="btn-beli"
+           class="btn-beli" 
+       data-text-id="Beli Sekarang" 
+       data-text-en="Buy Now">
+       Beli Sekarang</a>
+    </div>
+
+    <div class="balok produk">
+         <div class="top-badge top2">Top 2</div>
+        <div class="produk-img">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0h-mcd41qpzl9b46a@resize_w450_nl.webp">
+        </div>
+        <h3>Pussbite Makanan Kucing Kering Dry Cat Food 400gr</h3>
+        <p data-text-id="&#x2B50 4.9 | Terjual 793 | 122/Bulan" 
+           data-text-en="&#x2B50 4.9 | Sold 793 | 122/Month">
+           &#x2B50; 4.9 | Terjual 793. | 122/Bulan
+        </p>
+
+        <p>Rp11.200 - Rp13.000</p>
+        <a href="https://shopee.co.id/Pussbite-Makanan-Kucing-Kering-Dry-Cat-Food-400gr-Ekonomis-i.201020414.43009081717?extraParams=%7B%22display_model_id%22%3A285759964462%2C%22model_selection_logic%22%3A2%7D" class="btn-beli"
+           class="btn-beli" 
+       data-text-id="Beli Sekarang" 
+       data-text-en="Buy Now">
+       Beli Sekarang</a>
+    </div>
+
+    <div class="balok produk">
+         <div class="top-badge top3">Top 3</div>
+        <div class="produk-img">
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-22090-4fxhfew1suhvf5@resize_w450_nl.webp">
+        </div>
+        <h3>Tissue jolly 560g tisu wajah 560 gram facial tissue sheets 2ply</h3>
+        <p data-text-id="&#x2B50 4.9 | Terjual 6RB+ | 107/Bulan" 
+           data-text-en="&#x2B50 4.9 | Sold 6K+ | 107/Month">
+           &#x2B50; 4.9 | Terjual 6RB+ | 107/Bulan
+        </p>
+        <p>Rp18.750 - Rp19.750</p>
+         <a href="https://shopee.co.id/Tissue-jolly-560g-tisu-wajah-560-gram-facial-tissue-sheets-2ply-i.201020414.20149102007?extraParams=%7B%22display_model_id%22%3A260123504583%2C%22model_selection_logic%22%3A2%7D" class="btn-beli"
+               class="btn-beli" 
+       data-text-id="Beli Sekarang" 
+       data-text-en="Buy Now">
+       Beli Sekarang
+         </a>
+    </div>
+
+    <div class="balok produk">
+         <div class="top-badge top4">Top 4</div>
+        <div class="produk-img">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98u-lzyltrfkkwkb59@resize_w450_nl.webp">
+        </div>
+        <h3>Jolly pop up 10 x tissue pop up jolly Tisu Wajah 2ply</h3>
+        <p data-text-id="&#x2B50 4.9 | Terjual 1RB+ | 79/Bulan" 
+           data-text-en="&#x2B50 4.9 | Sold 1K+ | 79/Month">
+           &#x2B50; 4.9 | Terjual 1RB+ | 79/Bulan
+        </p>
+
+        <p>Rp27.219 - Rp32.500</p>
+         <a href="https://shopee.co.id/Jolly-pop-up-10-x-tissue-pop-up-jolly-Tisu-sheets-popup-tisu-Wajah-2ply-tisu-kotak-i.201020414.22442543562?extraParams=%7B%22display_model_id%22%3A137582638718%2C%22model_selection_logic%22%3A2%7D" 
+       class="btn-beli" 
+       data-text-id="Beli Sekarang" 
+       data-text-en="Buy Now">
+       Beli Sekarang
+     </a>
+    </div>
+
+</div>
+
+
+<div class="clear"></div>
+
+<h2 id="kontak" data-text-id="Kontak Kami" data-text-en="Contact Us">Kontak Kami</h2>
+    <div class="balok">
+        <p data-text-id="Alamat: Jl. Sepakat, Kulim, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28292, Indonesia" 
+           data-text-en="Address: Jl. Sepakat, Kulim, Tenayan Raya, Pekanbaru, Riau 28292, Indonesia">
+           Alamat: Jl. Sepakat, Kulim, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28292, Indonesia
+        </p>
+        <p>
+           Email: gkponsel@gmail.com
+        </p>
+        <p data-text-id="Jam buka: 08.00 - 20.00" data-text-en="Opening hours: 08:00 - 20:00">
+           Jam buka: 08.00 - 20.00
+        </p>
+        <a href="https://wa.me/6285278686868" class="btn-wa" target="_blank" data-text-id="Hubungi via WhatsApp" data-text-en="Contact via WhatsApp">
+            Hubungi via WhatsApp
+        </a>
+    </div>
+<h2 id="ecommerce">E-Commerce</h2>
+<div class="balok ecommerce-box">
+    
+    <div class="label-shopee">Shopee</div>
+
+    <div class="ecommerce">
+        
+        <div class="card">
+    <a href="https://shopee.co.id/rtppekanbaru">
+        <div class="img-box">
+            <img src="https://down-aka-id.img.susercontent.com/ad97abe1c1eda47c918c77a93505f42e_tn.webp">
+        </div>
+        <p>RTP</p>
+    </a>
+</div>
+
+        <div class="card">
+            <a href="https://shopee.co.id/al_mikbad">
+                <div class="img-box"><img src="https://down-aka-id.img.susercontent.com/id-11134233-7rbk1-m754ajvrlsbxe8_tn.webp"></div>
+                <p>Al-Mikbad</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://shopee.co.id/anpanpanpan">
+                <div class="img-box"><img src="https://down-aka-id.img.susercontent.com/id-11134233-7r98t-lv8uujsta0y59f_tn.webp"></div>
+                <p>Anpanpanpan</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://shopee.co.id/me_me_me_me">
+                <div class="img-box"><img src="https://down-aka-id.img.susercontent.com/b18aec8cec7e98adea66f34b9acef56a_tn.webp"></div>
+                <p>Rumah Tisu Pekanbaru</p>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+   <h2 id="lokasi" data-text-id="Lokasi Toko" data-text-en="Store Location">Lokasi Toko</h2>
+    <div class="balok">
+     <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=GK-Ponsel&output=embed"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+     </div>
+  </div>
+</div>
+
+<footer>
+    <p>© 2026 Rumah Tisu Pekanbaru</p>
+    
+    <p class="sosial">
+        <a href="https://wa.me/6285278686868" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+        </a>
+
+        <a href="mailto:gkponsel@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+        </a>
+
+        <a href="https://shopee.co.id/anpanpanpan" target="_blank">
+            <img src="https://freepngimg.com/thumb/logo/109014-shopee-logo-free-download-image.png">
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
